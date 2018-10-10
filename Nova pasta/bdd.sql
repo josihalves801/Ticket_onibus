@@ -8,30 +8,23 @@ CREATE SCHEMA IF NOT EXISTS bdd DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
 USE bdd ;
 
 
-CREATE TABLE IF NOT EXISTS maquina_2 (
-  `idmaquina_2` INT NOT NULL,
-  `verifica_cod` INT NOT NULL,
-  `linha` VARCHAR(45) NOT NULL,
-  `numero_onibus` INT NOT NULL);
 
-
-select * from maquina_2;
-
-
-CREATE TABLE IF NOT EXISTS maquina_1 (
+CREATE TABLE IF NOT EXISTS venda (
   `idmaquina_1` INT(11) NOT NULL,
   `validação_troco` INT NOT NULL);
 
 
-select * from maquina_1;
+select * from venda;
 
 CREATE TABLE IF NOT EXISTS Ticket (
-  `idTicket` INT NOT NULL,
+  `idTicket` INT NOT NULL AUTO_INCREMENT,
   `nome_da_linha` VARCHAR(45) NOT NULL,
   `data` DATETIME NOT NULL,
-  `valor_ticket` DECIMAL(4,2) NOT NULL);
+  `valor_ticket` DECIMAL(4,2) NOT NULL,
+  `data_uso`DATETIME NOT NULL);
 
 select * from Ticket ;
+
 CREATE TABLE IF NOT EXISTS troco (
   `idtroco` INT UNSIGNED NOT NULL,
   `qtd_nota2` INT UNSIGNED NOT NULL,
@@ -64,6 +57,7 @@ INSERT INTO `Ticket` VALUES ('2147483647','\"Praiamar\"','1994-09-04 14:34:44',3
 
 
 select * from Ticket ;
+
 
 
 select * from troco ;
