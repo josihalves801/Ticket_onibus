@@ -2,30 +2,17 @@
 
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS bdd DEFAULT CHARACTER SET utf8 ;
+drop database bdd;
 
 
-CREATE SCHEMA IF NOT EXISTS bdd DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
+
 USE bdd ;
 
 
 
 CREATE TABLE IF NOT EXISTS venda (
-  `idmaquina_1` INT(11) NOT NULL AUTO_INCREMENT ,
+  `idmaquina_1` INT(11) NOT NULL  ,
   `validação_troco` INT NOT NULL);
-
-Insert into venda values (
-
-
-
-
-
-
-
-
-
-
-
-);
 
 
 
@@ -43,7 +30,7 @@ Insert into venda values (
 select * from venda;
 
 CREATE TABLE IF NOT EXISTS Ticket (
-  `idTicket` INT NOT NULL AUTO_INCREMENT,
+  `idTicket` INT NOT NULL,
   `nome_da_linha` VARCHAR(45) NOT NULL,
   `data` DATETIME NOT NULL,
   `valor_ticket` DECIMAL(4,2) NOT NULL,
@@ -63,23 +50,23 @@ CREATE TABLE IF NOT EXISTS troco (
   `qtd_moeda50` INT UNSIGNED NOT NULL,
   `qtd_moeda1` INT UNSIGNED NOT NULL);
 
-INSERT INTO `Ticket` VALUES ('2147483647','\"Praiamar\"','1994-09-04 14:34:44',3.80),
-('2147483647','\"Caraguatatuba/ Ubatuba \"','2005-11-07 18:40:18',8.90),
-('2147483647','\"Caraguatatuba/ Ubatuba \"','2013-07-18 11:09:08',8.90),
-('2147483647','\"Caraguatatuba/ Ubatuba \"','2010-06-12 20:06:01',8.90),
-('2147483647','\"Caraguatatuba/São sebastião\"','1974-07-16 01:31:00',5.15),
-('2147483647','\"Caraguatatuba/ Ubatuba \"','2012-10-24 19:41:23', 8.90),
-('2147483647','\"Caraguatatuba/ Ubatuba \"','2015-01-08 23:09:40',8.90),
-('2147483647','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati','2008-06-27 18:57:28',4.95),
-('2147483647','\"Caraguatatuba/São sebastião\"','2002-12-19 06:36:49',5.15),
-('2147483647','\"Caraguatatuba/São sebastião\"','1980-12-16 02:27:22',5.15),
-('2147483647','\"Ubatuba(Rodoviária)/Caraguatatuba(Tabatinga)','1999-01-14 19:34:24',5.15),
-('2147483647','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati','1975-03-10 03:44:37',4.95),
-('2147483647','\"Ubatuba(Rodoviária)/Caraguatatuba(Tabatinga)','1989-06-25 23:20:40',5.15),
-('2147483647','\"Caraguatatuba/São sebastião\"','1975-03-22 17:20:14',5.15),
-('2147483647','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati','1977-03-09 10:23:18',4.95),
-('2147483647','\"Praiamar\"','1988-03-13 23:10:03',3.80),
-('2147483647','\"Caraguatatuba/ Ubatuba \"','1986-02-05 14:47:44',8.90); 
+INSERT INTO `Ticket` VALUES ('2147483647','\"Praiamar\"','1994-09-04 14:34:44',3.80,'1976-08-20 17:08:41'),
+('2147483647','\"Caraguatatuba/ Ubatuba \"','2005-11-07 18:40:18',8.90,'1997-12-10 11:16:21'),
+('2147483647','\"Caraguatatuba/ Ubatuba \"','2013-07-18 11:09:08',8.90,'1997-10-22 20:38:09'),
+('2147483647','\"Caraguatatuba/ Ubatuba \"','2010-06-12 20:06:01',8.90,'1991-11-27 18:41:37'),
+('2147483647','\"Caraguatatuba/São sebastião\"','1974-07-16 01:31:00',5.15,'2001-11-05 08:03:48'),
+('2147483647','\"Caraguatatuba/ Ubatuba \"','2012-10-24 19:41:23', 8.90,'1977-09-28 19:08:25'),
+('2147483647','\"Caraguatatuba/ Ubatuba \"','2015-01-08 23:09:40',8.90,'1999-12-02 00:07:16'),
+('2147483647','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati','2008-06-27 18:57:28',4.95,'1973-04-16 04:46:41'),
+('2147483647','\"Caraguatatuba/São sebastião\"','2002-12-19 06:36:49',5.15,'1974-10-20 17:28:17'),
+('2147483647','\"Caraguatatuba/São sebastião\"','1980-12-16 02:27:22',5.15,'1994-01-24 13:37:15'),
+('2147483647','\"Ubatuba(Rodoviária)/Caraguatatuba(Tabatinga)','1999-01-14 19:34:24',5.15,'2009-12-12 20:33:21'),
+('2147483647','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati','1975-03-10 03:44:37',4.95,'2015-11-14 19:21:34'),
+('2147483647','\"Ubatuba(Rodoviária)/Caraguatatuba(Tabatinga)','1989-06-25 23:20:40',5.15,'1980-11-09 11:36:07'),
+('2147483647','\"Caraguatatuba/São sebastião\"','1975-03-22 17:20:14',5.15,'2015-11-14 19:21:34'),
+('2147483647','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati','1977-03-09 10:23:18',4.95,'1980-11-09 11:36:07'),
+('2147483647','\"Praiamar\"','1988-03-13 23:10:03',3.80,'1980-11-09 11:36:07'),
+('2147483647','\"Caraguatatuba/ Ubatuba \"','1986-02-05 14:47:44',8.90,'1974-08-08 17:26:21'); 
 
 
 select * from Ticket ;
