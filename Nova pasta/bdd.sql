@@ -10,8 +10,34 @@ USE bdd ;
 
 
 CREATE TABLE IF NOT EXISTS venda (
-  `idmaquina_1` INT(11) NOT NULL,
+  `idmaquina_1` INT(11) NOT NULL AUTO_INCREMENT ,
   `validação_troco` INT NOT NULL);
+
+Insert into venda values (
+
+
+
+
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 select * from venda;
