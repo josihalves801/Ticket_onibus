@@ -19,16 +19,6 @@ CREATE TABLE IF NOT EXISTS venda (
 
 
 
-
-
-
-
-
-
-
-
-
-
 select * from venda;
 
 CREATE TABLE IF NOT EXISTS Ticket (
@@ -73,12 +63,14 @@ INSERT INTO `Ticket` VALUES ('2147483647','\"Praiamar\"','1994-09-04 14:34:44',3
 
 select * from Ticket ;
 
+
 UPDATE `Ticket`
 SET `valor_ticket `= 3.80
 WHERE `nome_da_linha` = '\"Praiamar\"';
 
 
-INSERT INTO `troco` VALUES ('1','72','56','91','54','96','85','93','59','72'),
+INSERT INTO `troco` VALUES 
+('1','72','56','91','54','96','85','93','59','72'),
 ('2','99','52','87','75','70','96','98','83','95'),
 ('3','99','96','79','73','75','71','56','68','80'),
 ('4','99','50','55','98','72','56','54','99','100'),
@@ -92,7 +84,7 @@ INSERT INTO `troco` VALUES ('1','72','56','91','54','96','85','93','59','72'),
 
 select * from troco ;
 
-USE `onibus` ;
+
 
 #---------------------------------------------------------
 
