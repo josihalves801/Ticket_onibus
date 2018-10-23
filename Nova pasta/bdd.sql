@@ -7,6 +7,7 @@ CREATE SCHEMA IF NOT EXISTS bdd DEFAULT CHARACTER SET utf8 ;
 CREATE SCHEMA IF NOT EXISTS bdd DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
 USE bdd ;
 
+use bdd;
 
 CREATE TABLE IF NOT EXISTS maquina_2 (
   `idmaquina_2` INT NOT NULL,
@@ -64,6 +65,10 @@ INSERT INTO `Ticket` VALUES ('2147483647','\"Praiamar\"','1994-09-04 14:34:44',3
 
 
 select * from Ticket ;
+
+UPDATE `Ticket`
+SET `valor_ticket `= 3.80
+WHERE `nome_da_linha` = '\"Praiamar\"';
 
 
 select * from troco ;
