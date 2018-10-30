@@ -12,6 +12,8 @@ namespace projeto
 {
     public partial class PagarPraiamar : Form
     {
+        
+        
         public PagarPraiamar()
         {
             InitializeComponent();
@@ -19,13 +21,26 @@ namespace projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("falta 1 real");
+            Maquina1 maquina1 = new Maquina1();
+            string result = maquina1.RealizaVenda((decimal)dim.Value);
+            MessageBox.Show(result);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             telaInicial telaInicial = new telaInicial();
             telaInicial.ShowDialog();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void lado1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

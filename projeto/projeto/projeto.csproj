@@ -62,7 +62,7 @@
     <Compile Include="escolherLinha.Designer.cs">
       <DependentUpon>escolherLinha.cs</DependentUpon>
     </Compile>
-    <Compile Include="maquina1.cs" />
+    <Compile Include="Maquina1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
