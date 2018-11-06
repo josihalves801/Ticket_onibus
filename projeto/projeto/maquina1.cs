@@ -10,28 +10,31 @@ namespace projeto
     {
         private decimal dim;
         private decimal Troco;
-        private decimal value;
+        private decimal falta;
 
         public decimal Dim { get => dim; set => dim = value; }
         public decimal Troco1 { get => Troco; set => Troco = value; }
-
+        public decimal Falta { get => falta; set => falta = value; }
 
         public string RealizaVenda(decimal Dim)
         {
-            if  (Dim > Convert.ToDecimal(3.80))
+            if (Dim > Convert.ToDecimal(3.80))//dinheiro maior
             {
-                Troco = dim - Convert.ToDecimal(3.80);
-                return "troco:" + Troco ;
+                Troco = Dim - Convert.ToDecimal(3.80);
+                return "troco:" +  Troco;
             }
-            if (Dim < Convert.ToDecimal(3.80))
+            else if (Dim < Convert.ToDecimal(3.80))//dinheiro menor
             {
-                Troco = Convert.ToDecimal(3.80) - Dim;
-                return "Insira" + Troco;
+                Falta = Convert.ToDecimal(3.80) - Dim;
+                return "Insira" +  Falta;
+                
             }
-            if (Dim == Convert.ToDecimal(3.80))
+            else if (Dim == Convert.ToDecimal(3.80)) //dinheiro certo
             {
-                return "venda efetuada com sucesso" ;
+                return "Venda efetuada com sucesso!";
             }
+            else return "Não foi possível efetuar a venda.";
+            
         }
 
     }

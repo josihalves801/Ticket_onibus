@@ -12,7 +12,7 @@ namespace projeto
 {
     public partial class PagarPraiamar : Form
     {
-        
+        decimal dinheiro = 0;
         
         public PagarPraiamar()
         {
@@ -22,15 +22,18 @@ namespace projeto
         private void button1_Click(object sender, EventArgs e)
         {
             Maquina1 maquina1 = new Maquina1();
-            string result = maquina1.RealizaVenda((decimal)dim.Value);
+            dinheiro += (decimal)dim.Value;
+            string result = maquina1.RealizaVenda(dinheiro);
             MessageBox.Show(result);
+            
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            telaInicial telaInicial = new telaInicial();
-            telaInicial.ShowDialog();
+            //telaInicial telaInicial = new telaInicial();
+            //telaInicial.ShowDialog();
+            this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

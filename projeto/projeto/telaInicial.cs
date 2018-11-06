@@ -12,6 +12,8 @@ namespace projeto
 {
     public partial class telaInicial : Form
     {
+        PagarPraiamar form2 = new PagarPraiamar();
+
         public telaInicial()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace projeto
 
         private void praiamar_Click(object sender, EventArgs e)
         {
-            PagarPraiamar form2 = new PagarPraiamar();
+            
             form2.ShowDialog();
         }
     }
