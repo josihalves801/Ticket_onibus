@@ -84,6 +84,7 @@
             this.Controls.Add(this.ok1);
             this.Name = "PagarPraiamar";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.PagarPraiamar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

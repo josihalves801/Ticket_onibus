@@ -44,6 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PagarCentro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagarCentro.Designer.cs">
+      <DependentUpon>PagarCentro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagarLagoinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagarLagoinha.Designer.cs">
+      <DependentUpon>PagarLagoinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagarSebastiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagarSebastiao.Designer.cs">
+      <DependentUpon>PagarSebastiao.cs</DependentUpon>
+    </Compile>
     <Compile Include="telaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +88,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PagarCentro.resx">
+      <DependentUpon>PagarCentro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagarLagoinha.resx">
+      <DependentUpon>PagarLagoinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagarSebastiao.resx">
+      <DependentUpon>PagarSebastiao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telaInicial.resx">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </EmbeddedResource>

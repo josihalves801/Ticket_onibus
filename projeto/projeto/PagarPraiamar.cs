@@ -23,8 +23,8 @@ namespace projeto
         {
             Maquina1 maquina1 = new Maquina1();
             dinheiro += (decimal)dim.Value;
-            string result = maquina1.RealizaVenda(dinheiro);
-            MessageBox.Show(result);
+            string result1 = maquina1.RealizaVenda(dinheiro);
+            MessageBox.Show(result1);
             
 
         }
@@ -42,6 +42,11 @@ namespace projeto
         }
 
         private void lado1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PagarPraiamar_Load(object sender, EventArgs e)
         {
 
         }

@@ -24,12 +24,20 @@ namespace projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Insira R$4,95");
+            PagarLagoinha form5 = new PagarLagoinha();
+            form5.ShowDialog();
         }
 
         private void centro_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("insira 8,90");
+            PagarCentro form6 = new PagarCentro();
+            form6.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PagarSebastiao form7 = new PagarSebastiao();
+            form7.ShowDialog();
         }
     }
 }
