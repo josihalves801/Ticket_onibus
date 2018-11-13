@@ -13,9 +13,12 @@ namespace projeto
     public partial class PagarLagoinha : Form
     {
         private decimal dinheiro = 0;
+        private DB _banco = new DB();
         public PagarLagoinha()
         {
             InitializeComponent();
+            _banco.DBName = "bdd";
+            _banco.Conectar();
         }
 
         private void dimLago_ValueChanged(object sender, EventArgs e)

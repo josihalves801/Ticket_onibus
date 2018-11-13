@@ -13,9 +13,12 @@ namespace projeto
     public partial class PagarSebastiao : Form
     {
         private decimal dinheiro = 0;
+        private DB _banco = new DB();
         public PagarSebastiao()
         {
             InitializeComponent();
+            _banco.DBName = "bdd";
+            _banco.Conectar();
         }
 
         private void voltar4_Click(object sender, EventArgs e)

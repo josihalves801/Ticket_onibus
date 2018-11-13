@@ -14,9 +14,13 @@ namespace projeto
     {
         PagarPraiamar form2 = new PagarPraiamar();
 
+
+        private DB _banco = new DB();
         public telaInicial()
         {
             InitializeComponent();
+            _banco.DBName = "bdd";
+            _banco.Conectar();
         }
 
         private void litoranea_Click(object sender, EventArgs e)
@@ -30,6 +34,21 @@ namespace projeto
         {
             
             form2.ShowDialog();
+            try
+            {
+                string sql = "SELECT idTicket FROM";
+                sql += " Ticket WHERE";
+                sql += " nome_da_linha = Praiamar";
+                DataSet resultado = _banco.Buscar(sql);
+
+                
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
+
         }
     }
 }
