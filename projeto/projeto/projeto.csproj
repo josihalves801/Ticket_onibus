@@ -71,6 +71,11 @@
     <Compile Include="PagarSebastiao.Designer.cs">
       <DependentUpon>PagarSebastiao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="telaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +114,10 @@
     <EmbeddedResource Include="PagarSebastiao.resx">
       <DependentUpon>PagarSebastiao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="telaInicial.resx">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +127,21 @@
     <EmbeddedResource Include="escolherLinha.resx">
       <DependentUpon>escolherLinha.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERF1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoaa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERF2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
