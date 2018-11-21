@@ -14,12 +14,9 @@ namespace projeto
     {
         decimal dinheiro = 0;
 
-        private DB _banco = new DB();
         public PagarPraiamar()
         {
             InitializeComponent();
-            _banco.DBName = "bdd";
-            _banco.Conectar();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,6 +24,7 @@ namespace projeto
             Maquina1 maquina1 = new Maquina1();
             dinheiro += (decimal)dim.Value;
             string result1 = maquina1.RealizaVenda(dinheiro);
+            MessageBox.Show(result1);
             
             
 

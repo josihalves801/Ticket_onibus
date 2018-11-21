@@ -14,12 +14,11 @@ namespace projeto
     {
         private decimal dinheiro = 0;
 
-        private DB _banco = new DB();
+        
         public PagarCentro()
         {
             InitializeComponent();
-            _banco.DBName = "bdd";
-            _banco.Conectar();
+           
         }
 
         private void voltar3_Click(object sender, EventArgs e)
