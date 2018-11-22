@@ -31,11 +31,11 @@ CREATE TABLE IF NOT EXISTS venda (
 select * from venda;
 
 CREATE TABLE IF NOT EXISTS Ticket (
-  `idTicket` INT NOT NULL,
+  `idTicket` INT NOT NULL auto_increment,
   `nome_da_linha` VARCHAR(45) NOT NULL,
   `data` DATETIME NOT NULL,
   `valor_ticket` DECIMAL(4,2) NOT NULL,
-  `data_uso`DATETIME NOT NULL);
+  `data_uso`DATETIME );
 
 select * from Ticket ;
 
