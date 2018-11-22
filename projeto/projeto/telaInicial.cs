@@ -50,5 +50,10 @@ namespace projeto
             }
 
         }
+
+        private void telaInicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

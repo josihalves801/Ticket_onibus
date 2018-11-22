@@ -90,13 +90,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(244)))), ((int)(((byte)(224)))));
             this.BackgroundImage = global::projeto.Properties.Resources.fundoaa;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 491);
+            this.ClientSize = new System.Drawing.Size(800, 455);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.litoranea);
             this.Controls.Add(this.praiamar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "telaInicial";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.telaInicial_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

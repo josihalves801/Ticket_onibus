@@ -14,12 +14,12 @@ namespace projeto
     {
         private decimal dinheiro = 0;
 
-        private DB _banco = new DB();
+        //private DB _banco = new DB();
         public PagarCentro()
         {
-            InitializeComponent();
+           /* InitializeComponent();
             _banco.DBName = "bdd";
-            _banco.Conectar();
+            _banco.Conectar();*/
         }
 
         private void voltar3_Click(object sender, EventArgs e)
@@ -33,6 +33,11 @@ namespace projeto
             dinheiro += (decimal)dimCentro.Value;
             string result3 = maquina1.RealizaVenda3(dinheiro);
             MessageBox.Show(result3);
+        }
+
+        private void PagarCentro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -33,5 +33,10 @@ namespace projeto
             string result4 = maquina1.RealizaVenda4(dinheiro);
             MessageBox.Show(result4);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
