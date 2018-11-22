@@ -82,6 +82,7 @@
             this.Controls.Add(this.dimCentro);
             this.Name = "PagarCentro";
             this.Text = "PagarCentro";
+            this.Load += new System.EventHandler(this.PagarCentro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dimCentro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -83,6 +83,7 @@
             this.Controls.Add(this.dimLago);
             this.Name = "PagarLagoinha";
             this.Text = "PagarLagoinha";
+            this.Load += new System.EventHandler(this.PagarLagoinha_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dimLago)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

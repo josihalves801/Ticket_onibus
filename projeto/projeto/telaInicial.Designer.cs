@@ -97,12 +97,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "telaInicial";
             this.Text = "Form1";
-<<<<<<< HEAD
+
             this.Load += new System.EventHandler(this.telaInicial_Load);
-=======
+
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
->>>>>>> 6dfa5f6fe71df68564f50e38f3ca71416ebbd650
+ 
             this.ResumeLayout(false);
 
         }

@@ -20,18 +20,10 @@ namespace projeto
 
         private void conectar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                MySqlConnection paraConectar = new MySqlConnection("server=localhost;port=3306;User Id=root;database=bdd;SSL Mode=None");
-                paraConectar.Open();
-                telaInicial escolher = new telaInicial();
-                escolher.ShowDialog();
+            telaInicial escolher = new telaInicial();
+             escolher.ShowDialog();
 
-            }
-            catch (MySqlException erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
+            
 
         }
 

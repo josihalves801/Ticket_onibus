@@ -82,6 +82,7 @@
             this.Controls.Add(this.dimSeba);
             this.Name = "PagarSebastiao";
             this.Text = "PagarSebastiao";
+            this.Load += new System.EventHandler(this.PagarSebastiao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dimSeba)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
