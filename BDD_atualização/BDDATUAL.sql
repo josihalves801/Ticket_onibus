@@ -52,23 +52,23 @@ CREATE TABLE IF NOT EXISTS troco (
   `qtd_moeda1` INT (2)UNSIGNED NOT NULL);
 
 INSERT INTO `Ticket` VALUES 
-('2147483647','\"Praiamar\"',null,3.80,null),
-('2147483641','\"Caraguatatuba/ Ubatuba \"',null,8.90,null),
-('2147483642','\"Caraguatatuba/ Ubatuba \"',null,8.90,null),
-('2147483643','\"Caraguatatuba/ Ubatuba \"',null,8.90,null),
-('2147483644','\"Caraguatatuba/São sebastião\"',null,5.15,null),
-('2147483645','\"Caraguatatuba/ Ubatuba \"',null, 8.90,null),
-('2147483646','\"Caraguatatuba/ Ubatuba \"',null,8.90,null),
-('2147443648','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati',null,4.95,null),
-('2147483649','\"Caraguatatuba/São sebastião\"',null,5.15,null),
-('2147483627','\"Caraguatatuba/São sebastião\"',null,5.15,null),
-('2147483637','\"Ubatuba(Rodoviária)/Caraguatatuba(Tabatinga)',null,5.15,null),
-('2147483657','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati',null,4.95,null),
-('2147483697','\"Ubatuba(Rodoviária)/Caraguatatuba(Tabatinga)',null,5.15,null),
-('2147483687','\"Caraguatatuba/São sebastião\"',null,5.15,'2015-11-14 19:21:34'),
-('2147483547','\"Caraguatatuba(Lagoinha)/Caraguatatuba(Tabati',null,4.95,null),
-('2147483747','\"Praiamar\"',null,3.80,null),
-('2147483947','\"Caraguatatuba/ Ubatuba \"',null,8.90,null); 
+('2147483647','Praiamar',null,3.80,null),
+('2147483641','Centro de Ubatuba',null,8.90,null),
+('2147483642','Centro de Ubatuba',null,8.90,null),
+('2147483643','Centro de Ubatuba',null,8.90,null),
+('2147483644','São sebastião',null,5.15,null),
+('2147483645','Centro de Ubatuba',null, 8.90,null),
+('2147483646','Centro de Ubatuba',null,8.90,null),
+('2147443648','Ubatuba(Lagoinha)',null,4.95,null),
+('2147483649','São sebastião',null,5.15,null),
+('2147483627','São sebastião',null,5.15,null),
+('2147483637','Centro de Ubatuba',null,5.15,null),
+('2147483657','Ubatuba(Lagoinha)',null,4.95,null),
+('2147483697','Ubatuba(Lagoinha)',null,5.15,null),
+('2147483687','São sebastião',null,5.15,null),
+('2147483547','Ubatuba(Lagoinha)',null,4.95,null),
+('2147483747','Praiamar',null,3.80,null),
+('2147483947','Centro de Ubatuba',null,8.90,null); 
 
 
 select * from Ticket ;
