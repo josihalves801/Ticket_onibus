@@ -37,7 +37,7 @@ namespace projeto
             }
             else if (Dim == Convert.ToDecimal(3.80)) //dinheiro certo
             {
-                return "Venda efetuada com sucesso! ";
+                return "Venda efetuada com sucesso!";
             }
             else return "Não foi possível efetuar a venda. ";
             
