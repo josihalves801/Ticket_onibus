@@ -7,18 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace projeto
 {
     public partial class PagarLagoinha : Form
     {
         private decimal dinheiro = 0;
-        private DB _banco = new DB();
+        private readonly MySqlConnection paraConectar;
+
         public PagarLagoinha()
         {
             InitializeComponent();
-            _banco.DBName = "bdd";
-            _banco.Conectar();
+            try
+            {
+                paraConectar = new MySqlConnection("server=localhost;port=3306;User Id=root;database=bdd;SSL Mode=None");
+                paraConectar.Open();
+
+            }
+            catch (MySqlException erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
         }
 
         private void dimLago_ValueChanged(object sender, EventArgs e)
@@ -36,7 +46,23 @@ namespace projeto
             Maquina1 maquina1 = new Maquina1();
             dinheiro += (decimal)dimLago.Value;
             string result2 = maquina1.RealizaVenda2(dinheiro);
-            MessageBox.Show(result2);
+            if (result2 == "Venda efetuada com sucesso!")
+            {
+                MySqlCommand comando = new MySqlCommand("insert into Ticket (idTicket, nome_da_linha, data, valor_ticket, data_uso) values(null, ?, ?, ?, ?)", paraConectar);
+                comando.Parameters.AddWithValue("@nome_da_linha", "Ubatuba - Lagoinha");
+                comando.Parameters.AddWithValue("@data", DateTime.Now.ToString("dd/MM/yyyy"));
+                comando.Parameters.AddWithValue("valor_ticket", "4,95");
+
+            }
+            else
+            {
+                MessageBox.Show(result2);
+            }
+        }
+
+        private void PagarLagoinha_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void PagarLagoinha_Load(object sender, EventArgs e)
