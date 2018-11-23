@@ -133,7 +133,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PagarSebastiao";
             this.Text = "PagarSebastiao";
-            this.Load += new System.EventHandler(this.PagarSebastiao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dimSeba)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -97,12 +97,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "telaInicial";
             this.Text = "Form1";
-
             this.Load += new System.EventHandler(this.telaInicial_Load);
-
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
- 
             this.ResumeLayout(false);
 
         }

@@ -13,7 +13,7 @@ namespace projeto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new comecarSessao());
+            Application.Run(new telaInicial());
         }
     }
 }
