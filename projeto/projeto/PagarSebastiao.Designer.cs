@@ -42,7 +42,7 @@
             // dimSeba
             // 
             this.dimSeba.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dimSeba.Location = new System.Drawing.Point(441, 231);
+            this.dimSeba.Location = new System.Drawing.Point(443, 231);
             this.dimSeba.Name = "dimSeba";
             this.dimSeba.Size = new System.Drawing.Size(84, 37);
             this.dimSeba.TabIndex = 7;
@@ -51,11 +51,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(292, 177);
+            this.label1.Location = new System.Drawing.Point(292, 182);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 32);
+            this.label1.Size = new System.Drawing.Size(188, 32);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Tarifa - R$5,15";
+            this.label1.Text = "Tarifa -R$5,15";
             // 
             // ok4
             // 
@@ -111,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(238, 238);
+            this.label3.Location = new System.Drawing.Point(236, 238);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 25);
             this.label3.TabIndex = 12;
