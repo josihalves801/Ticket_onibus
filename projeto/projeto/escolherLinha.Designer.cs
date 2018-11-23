@@ -67,7 +67,7 @@
             this.centro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.centro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.centro.ForeColor = System.Drawing.Color.White;
-            this.centro.Location = new System.Drawing.Point(318, 232);
+            this.centro.Location = new System.Drawing.Point(328, 232);
             this.centro.Name = "centro";
             this.centro.Size = new System.Drawing.Size(140, 79);
             this.centro.TabIndex = 2;
