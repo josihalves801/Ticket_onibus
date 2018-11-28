@@ -11,13 +11,12 @@ using MySql.Data.MySqlClient;
 
 namespace projeto
 {
-    public partial class PagarLagoinha : Form
+    public partial class Pagar_Lagoinha : Form
     {
-        private decimal dinheiro = 0;
-
+        decimal dinheiro = 0;
         private readonly MySqlConnection paraConectar;
 
-        public PagarLagoinha()
+        public Pagar_Lagoinha()
         {
             InitializeComponent();
             try
@@ -30,46 +29,39 @@ namespace projeto
             {
                 MessageBox.Show(erro.Message);
             }
+        }
+
+        private void Pagar_Lagoinha_Load(object sender, EventArgs e)
+        {
 
         }
 
-        private void dimLago_ValueChanged(object sender, EventArgs e)
+        private void continuar_Click(object sender, EventArgs e)
         {
-            
-        }
 
-        private void voltar2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void ok2_Click(object sender, EventArgs e)
-        {
             Maquina1 maquina1 = new Maquina1();
             dinheiro += (decimal)dimLago.Value;
-            string result2 = maquina1.RealizaVenda2(dinheiro);
-            if (result2 == "Venda efetuada com sucesso!")
+            string result1 = maquina1.RealizaVenda(dinheiro);
+
+
+            if (result1 == "Venda efetuada com sucesso!")
             {
                 MySqlCommand comando = new MySqlCommand("insert into Ticket (idTicket, nome_da_linha, data, valor_ticket, data_uso) values(null, ?, ?, ?, ?)", paraConectar);
-                comando.Parameters.AddWithValue("@nome_da_linha", "Ubatuba - Lagoinha");
+                comando.Parameters.AddWithValue("@nome_da_linha", "Praiamar");
                 comando.Parameters.AddWithValue("@data", DateTime.Now.ToString("dd/MM/yyyy"));
-                comando.Parameters.AddWithValue("valor_ticket", "4,95");
+                comando.Parameters.AddWithValue("valor_ticket", "3,80");
 
             }
             else
             {
-                MessageBox.Show(result2);
+                MessageBox.Show(result1);
             }
-        }
-
-        private void PagarLagoinha_Load(object sender, EventArgs e)
-        {
 
         }
 
-        private void PagarLagoinha_Load(object sender, EventArgs e)
+        private void voltar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

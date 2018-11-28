@@ -16,7 +16,7 @@ namespace projeto
         decimal dinheiro = 0;
         private readonly MySqlConnection paraConectar;
 
-        private DB _banco = new DB();
+        
         public PagarPraiamar()
         {
             InitializeComponent();
@@ -61,8 +61,6 @@ namespace projeto
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //telaInicial telaInicial = new telaInicial();
-            //telaInicial.ShowDialog();
             this.Close();
         }
 

@@ -7,51 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace projeto
 {
-    public partial class telaInicial : Form
+    public partial class TelaInicial : Form
     {
-        PagarPraiamar form2 = new PagarPraiamar();
-
-
-        private DB _banco = new DB();
-        public telaInicial()
+        public TelaInicial()
         {
             InitializeComponent();
-            _banco.DBName = "bdd";
-            _banco.Conectar();
         }
 
-        private void litoranea_Click(object sender, EventArgs e)
+        private void Praiamar_Click(object sender, EventArgs e)
         {
-            escolherLinha form3 = new escolherLinha();
-            form3.ShowDialog();
-
+            PagarPraiamar praiamar = new PagarPraiamar();
+            praiamar.ShowDialog();
         }
 
-        private void praiamar_Click(object sender, EventArgs e)
+        private void Litoranea_Click(object sender, EventArgs e)
         {
-            
-            form2.ShowDialog();
-            try
-            {
-                string sql = "SELECT idTicket FROM";
-                sql += " Ticket WHERE";
-                sql += " nome_da_linha = Praiamar";
-                DataSet resultado = _banco.Buscar(sql);
-
-                
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
-
+            escolherLinha escolher = new escolherLinha();
+            escolher.ShowDialog();
         }
-
-        //private void telaInicial_Load(object sender, EventArgs e)
-        
     }
 }

@@ -13,7 +13,7 @@ namespace projeto
 {
     public partial class PagarCentro : Form
     {
-        private decimal dinheiro = 0;
+        decimal dinheiro = 0;
         private readonly MySqlConnection paraConectar;
 
         public PagarCentro()
@@ -29,41 +29,37 @@ namespace projeto
             {
                 MessageBox.Show(erro.Message);
             }
-
         }
 
-        private void voltar3_Click(object sender, EventArgs e)
+        private void PagarCentro_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
-        private void ok3_Click(object sender, EventArgs e)
+        private void cuntinue_Click(object sender, EventArgs e)
         {
             Maquina1 maquina1 = new Maquina1();
-            dinheiro += (decimal)dimCentro.Value;
-            string result3 = maquina1.RealizaVenda3(dinheiro);
-            if (result3 == "Venda efetuada com sucesso!")
+            dinheiro += (decimal)dimcentro.Value;
+            string result1 = maquina1.RealizaVenda(dinheiro);
+
+
+            if (result1 == "Venda efetuada com sucesso!")
             {
                 MySqlCommand comando = new MySqlCommand("insert into Ticket (idTicket, nome_da_linha, data, valor_ticket, data_uso) values(null, ?, ?, ?, ?)", paraConectar);
-                comando.Parameters.AddWithValue("@nome_da_linha", "Ubatuba - Centro");
+                comando.Parameters.AddWithValue("@nome_da_linha", "Praiamar");
                 comando.Parameters.AddWithValue("@data", DateTime.Now.ToString("dd/MM/yyyy"));
-                comando.Parameters.AddWithValue("valor_ticket", "8,90");
+                comando.Parameters.AddWithValue("valor_ticket", "3,80");
 
             }
             else
             {
-                MessageBox.Show(result3);
+                MessageBox.Show(result1);
             }
         }
 
-        private void PagarCentro_Load(object sender, EventArgs e)
+        private void voltar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void PagarCentro_Load(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

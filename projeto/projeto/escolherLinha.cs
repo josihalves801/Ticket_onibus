@@ -24,14 +24,14 @@ namespace projeto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PagarLagoinha form5 = new PagarLagoinha();
-            form5.ShowDialog();
+            Pagar_Lagoinha lagoinha = new Pagar_Lagoinha();
+            lagoinha.ShowDialog();
         }
 
         private void centro_Click(object sender, EventArgs e)
         {
-            PagarCentro form6 = new PagarCentro();
-            form6.ShowDialog();
+            PagarCentro centro = new PagarCentro();
+            centro.ShowDialog();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
