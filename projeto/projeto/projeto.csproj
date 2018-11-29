@@ -98,6 +98,12 @@
     <Compile Include="TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vendido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendido.Designer.cs">
+      <DependentUpon>Vendido.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -128,6 +134,9 @@
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vendido.resx">
+      <DependentUpon>Vendido.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fundoaa.jpg" />
@@ -143,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ERF2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bilhete-em-branco-5309690.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\foto_%282%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

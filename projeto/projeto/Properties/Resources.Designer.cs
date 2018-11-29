@@ -63,6 +63,16 @@ namespace projeto.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bilhete_em_branco_5309690 {
+            get {
+                object obj = ResourceManager.GetObject("bilhete-em-branco-5309690", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ERF {
             get {
                 object obj = ResourceManager.GetObject("ERF", resourceCulture);
@@ -86,6 +96,16 @@ namespace projeto.Properties {
         internal static System.Drawing.Bitmap ERF2 {
             get {
                 object obj = ResourceManager.GetObject("ERF2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto__2_ {
+            get {
+                object obj = ResourceManager.GetObject("foto_(2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

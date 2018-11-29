@@ -47,6 +47,8 @@ namespace projeto
                 comando.Parameters.AddWithValue("@nome_da_linha", "Praiamar");
                 comando.Parameters.AddWithValue("@data", DateTime.Now.ToString("dd/MM/yyyy"));
                 comando.Parameters.AddWithValue("valor_ticket", "3,80");
+                Vendido vendido = new Vendido();
+                vendido.ShowDialog();
 
             }
             else
